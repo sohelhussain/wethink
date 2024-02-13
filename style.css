@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "l";
+  src: url(fonts/l);
+}
+@font-face {
+  font-family: "l-2";
+  src: url(fonts/l-2);
+}
+:root {
+  --yellow: #f3c77c;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #151414;
+}
+#container-first {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw;
+}
+nav .nav-right a {
+  color: var(--yellow);
+  font-size: 1.5vw;
+  text-decoration: none;
+  margin-left: 5vw;
+  /* font-family: "l"; */
+  font-weight: 100;
+}
+.hero {
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero h1 {
+  top: -15vw;
+  position: absolute;
+  font-size: 50vw;
+  font-family: "l";
+  color: var(--yellow);
+}
+.down-hero{
+    background-color: white;
+}
