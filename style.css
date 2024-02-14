@@ -8,6 +8,8 @@
 }
 :root {
   --yellow: #f3c77c;
+  --textYellow: #e7cfb1;
+  --prime: #151414;
 }
 * {
   margin: 0%;
@@ -23,8 +25,8 @@ body {
 #main {
   width: 100%;
   position: relative;
-  overflow: hidden;
-  background-color: #151414;
+  /* overflow: hidden; */
+  background-color: var(--prime);
 }
 #container-first {
   height: 100vh;
@@ -38,29 +40,135 @@ nav {
   justify-content: space-between;
   padding: 1.5vw;
 }
+.nav .nav-right {
+  cursor: pointer;
+}
 nav .nav-right a {
   color: var(--yellow);
   font-size: 1.5vw;
   text-decoration: none;
   margin-left: 5vw;
-  /* font-family: "l"; */
-  font-weight: 100;
+  font-family: "l";
+  font-weight: 100 !important;
 }
 .hero {
   width: 100%;
-  background-color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  bottom: 20%;
+  /* padding-left: 35vw;
+  padding-right: 35vw; */
+  position: absolute;
+  pointer-events: none;
+  /* background-color: rebeccapurple; */
+  height: 40vw;
 }
 .hero h1 {
-  top: -15vw;
-  position: absolute;
   font-size: 50vw;
   font-family: "l";
+  /* background-color: red; */
+  color: var(--yellow);
+  transform: translateY(-100%);
+  /* margin: 0vw 15vw 0vw 15vw; */
+}
+.down-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+.down-hero .hero-da {
+  width: fit-content;
+}
+.down-hero .hero-da h4 {
+  font-size: 3vw;
+  letter-spacing: -0.1;
+  font-family: "l";
+  line-height: 1;
+  font-weight: 100;
   color: var(--yellow);
 }
-.down-hero{
-    background-color: white;
+#conatainer-second {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.video-box {
+  height: 100%;
+  width: 40%;
+}
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#container-third {
+  width: 100%;
+  height: 100vh;
+  /* background-color: whitesmoke; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container-third .text-mom {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: red; */
+  /* border: 1px solid black; */
+  height: 11vw;
+  line-height: 1;
+  overflow: hidden;
+}
+#container-third h1 span {
+  font-family: "l-2";
+}
+#container-third h1 {
+  font-size: 13vw;
+  /* font-family: l; */
+  transform: translateY(100%);
+  letter-spacing: 0.5;
+  color: var(--textYellow);
+}
+#container-third .text-mom:nth-child(3) {
+  padding-left: 26vw;
+}
+#container-four {
+  width: 100%;
+  height: 100vh;
+  background-color: #9acba1;
+}
+#container-four .mousefollow {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--prime);
+  color: white;
+  border-radius: 50%;
+  font-size: 2.5vw;
+  transform: translate(-50%, -50%);
+}
+#container-five {
+  width: 100%;
+  height: 100vh;
+  background-color: #9ac1cb;
+  display: flex;
+  align-items: center;
+}
+#container-five h1 {
+  font-size: 40vw;
+  /* font-family: "l"; */
+}
+#container-seven {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
 }
