@@ -48,6 +48,7 @@ heroHed.innerHTML = culture;
 
 gsap.to(".hero h1 span", {
   y: "0%",
+  stagger:.1
 });
 
 gsap.to(".video-box", {
@@ -61,7 +62,7 @@ gsap.to(".video-box", {
   },
 });
 gsap.to("#container-five h1", {
-  transform: `translateX(-40%)`,
+  transform: `translateX(-60%)`,
   scrollTrigger: {
     scroller: "#main",
     trigger: "#container-five",
@@ -81,7 +82,6 @@ gsap.to("#container-third h1", {
   },
 });
 const mouseFollower = () => {
-  // const cursor = document.querySelector() 
   document.querySelector(`#container-four`).onmousemove = e => {
     gsap.to(`#container-four .mousefollow`,{
       x: e.clientX,
