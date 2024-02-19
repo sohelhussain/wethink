@@ -47,11 +47,12 @@ body {
 .img-box img {
   position: absolute;
 }
+/* ------------container-first----------- */
 #container-first {
   height: 100vh;
   width: 100%;
   position: relative;
-  display: none;
+  /* display: none; */
 }
 nav {
   width: 100%;
@@ -59,7 +60,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5vw;
-  display: none;
+  /* display: none; */
 }
 .nav .nav-right {
   cursor: pointer;
@@ -116,13 +117,15 @@ nav .nav-right a {
   font-weight: 100;
   color: var(--yellow);
 }
+/* ----------container-second---------------- */
+
 #conatainer-second {
   width: 100%;
   height: 100vh;
   display: flex;
   align-self: center;
   justify-content: center;
-  display: none;
+  /* display: none; */
 }
 .video-box {
   height: 100%;
@@ -142,7 +145,7 @@ nav .nav-right a {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
+  /* display: none; */
 }
 #container-third .text-mom {
   /* text-align: center; */
@@ -168,10 +171,13 @@ nav .nav-right a {
 #container-third .text-mom:nth-child(3) {
   padding-left: 26vw;
 }
+/* ----------container-four---------------- */
+
 #container-four {
   width: 100%;
   height: 100vh;
   background-color: #9acba1;
+  display: none;
 }
 #container-four .mousefollow {
   width: 100px;
@@ -193,6 +199,7 @@ nav .nav-right a {
   background-color: #9ac1cb;
   display: flex;
   align-items: center;
+  /* display: none; */
 }
 #container-five h1 {
   font-size: min(51vw, 82vh);
@@ -205,6 +212,35 @@ nav .nav-right a {
   white-space: nowrap;
   will-change: transform;
 }
+/* ------------container-six---------------- */
+
+#container-six {
+  width: 100%;
+  height: 50vh;
+  background-color: #9ac1cb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* display: none; */
+}
+.stret-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.stret-row .stret-hed h1 {
+  font-weight: 300;
+  font-size: 1.8vw;
+}
+.stret-row .stret-links h2 {
+  font-weight: 100;
+  margin-bottom: 3px;
+  font-size: 1.5vw;
+  color: #384245;
+}
 /* ------------container-seven---------------- */
 #container-seven {
   width: 100%;
@@ -214,4 +250,76 @@ nav .nav-right a {
   display: grid;
   grid-template-columns: repeat(3) 1fr;
   grid-template-rows: repeat(3) 1fr;
+  /* display: none; */
+}
+/* ------------container-eight---------------- */
+#container-eight {
+  width: 100%;
+  height: 100vh;
+  background-color: #e7cfb1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* display: none; */
+}
+#container-eight .eight-hed {
+  width: fit-content;
+  height: 5vw;
+  overflow: hidden;
+}
+#container-eight .eight-hed h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: -1px;
+  word-spacing: 0.8vw;
+  transform: translate(0%, 100%);
+}
+video {
+  width: 400px;
+}
+footer {
+  width: 100%;
+  height: 35vh;
+  background-color: #151414;
+  padding: 2vw;
+}
+footer .foot-hed {
+}
+footer .foot-hed h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: -5px;
+  color: #695f53;
+}
+footer .foot-hed h1 span {
+  position: relative;
+  color: #e7cfb1;
+  display: inline-block;
+}
+footer .foot-hed h1 span::before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  /* top: 0; */
+  /* left: 0; */
+  /* transform: translate(-50%); */
+}
+.foot-nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.foot-nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
 }

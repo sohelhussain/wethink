@@ -94,6 +94,7 @@ heroHed.innerHTML = culture;
 gsap.to(".hero h1 span", {
   y: "0%",
   stagger: 0.1,
+  delay:4.5
 });
 gsap.to(".video-box", {
   width: "100%",
@@ -178,3 +179,12 @@ const fourContent = () => {
   });
 };
 // fourContent();
+gsap.to("#container-eight .eight-hed h1",{
+  y:"0%",
+  scrollTrigger:{
+    trigger:"#container-eight",
+    scroller:"#main",
+    start:"0% 0%",
+    end:"100% -100%",
+  }
+})
