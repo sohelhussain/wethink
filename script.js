@@ -40,17 +40,17 @@ const loco = () => {
 loco();
 const imageRendererLoader = () => {
   const loaderImage = [
-    `https://wethinkelastic.com/assets/images/152c223f4359675788470.svg`,
-    `https://wethinkelastic.com/assets/images/24a07612b16472c6a503f.svg`,
-    `https://wethinkelastic.com/assets/images/338b04b3ad8edf6773599.svg`,
-    `https://wethinkelastic.com/assets/images/4e7e9b9fc472434d65a23.svg`,
-    `https://wethinkelastic.com/assets/images/556ce542d7fdbd78d032e.svg`,
-    `https://wethinkelastic.com/assets/images/6a714ad31db5d83bc967b.svg`,
-    `https://wethinkelastic.com/assets/images/7c9e22462b51ae93b5a17.svg`,
-    `https://wethinkelastic.com/assets/images/8a2db0cd90582eb4b877d.svg`,
-    `https://wethinkelastic.com/assets/images/9e5b57420355774e0a99d.svg`,
-    `https://wethinkelastic.com/assets/images/109804494fa1878703f2c1.svg`,
-    `https://wethinkelastic.com/assets/images/11d1acd8abd7b1efc4c23d.svg`,
+    `images/l1.svg`,
+    `images/l2.svg`,
+    `images/l3.svg`,
+    `images/l4.svg`,
+    `images/l5.svg`,
+    `images/l6.svg`,
+    `images/l7.svg`,
+    `images/l8.svg`,
+    `images/l9.svg`,
+    `images/l10.svg`,
+    `images/l11.svg`,
   ];
   const img = document.querySelector(`.img-box img`);
   let crval = 0;
@@ -61,6 +61,7 @@ const imageRendererLoader = () => {
   const preLoad = () => {
     img.src = loaderImage[crval];
     crval = (crval + 1) % loaderImage.length;
+    console.log("hii");
   };
   const showImg = () => {
     preLoad();
@@ -72,13 +73,13 @@ const imageRendererLoader = () => {
       }
     }
   };
-  const time = Math.floor(Math.random() * 150) + 50;
+  const time = Math.floor(Math.random() * 200) + 50;
   const myShowInt = setInterval(showImg, time);
   gsap.to("#loader", {
     top: "-100%",
     delay: 4,
     ease: "expo.out",
-    duration:2.5,
+    duration: 2.5,
     display: "none",
   });
 };
@@ -94,7 +95,7 @@ heroHed.innerHTML = culture;
 gsap.to(".hero h1 span", {
   y: "0%",
   stagger: 0.1,
-  delay:4.5
+  delay: 4.5,
 });
 gsap.to(".video-box", {
   width: "100%",
@@ -112,7 +113,7 @@ gsap.to("#container-five h1", {
     scroller: "#main",
     trigger: "#container-five",
     start: "0% 0%",
-    end: "0% -50%",
+    end: "0% -200%",
     scrub: 1,
     pin: true,
   },
@@ -179,12 +180,12 @@ const fourContent = () => {
   });
 };
 // fourContent();
-gsap.to("#container-eight .eight-hed h1",{
-  y:"0%",
-  scrollTrigger:{
-    trigger:"#container-eight",
-    scroller:"#main",
-    start:"0% 0%",
-    end:"100% -100%",
-  }
-})
+gsap.to("#container-eight .eight-hed h1", {
+  y: "0%",
+  scrollTrigger: {
+    trigger: "#container-eight",
+    scroller: "#main",
+    start: "0% 0%",
+    end: "100% -100%",
+  },
+});
