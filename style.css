@@ -25,7 +25,7 @@ body {
 #main {
   width: 100%;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: var(--prime);
 }
 #loader {
@@ -89,15 +89,10 @@ nav .nav-right a {
 .hero h1 span {
   font-size: 45vw;
   font-family: "l";
-  /* background-color: red; */
   color: var(--yellow);
   transform: translateY(100%);
-  /* margin: 0vw 15vw 0vw 15vw; */
   display: inline-block;
 }
-/* .hero h1 span{
-  display: inline-block;
-} */
 .down-hero {
   display: flex;
   flex-direction: column;
@@ -112,7 +107,7 @@ nav .nav-right a {
 .down-hero .hero-da h4 {
   font-size: 3vw;
   letter-spacing: -0.1;
-  font-family: "l";
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
   font-weight: 100;
   color: var(--yellow);
@@ -175,9 +170,8 @@ nav .nav-right a {
 
 #container-four {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #9acba1;
-  display: none;
 }
 #container-four .mousefollow {
   width: 100px;
@@ -191,6 +185,7 @@ nav .nav-right a {
   font-size: 2.5vw;
   position: fixed;
   transform: translate(-50%, -50%);
+  /* display: none; */
 }
 /* ----------container-five---------------- */
 #container-five {
@@ -250,6 +245,7 @@ nav .nav-right a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 5vw;
+  /* display: none; */
 }
 #container-seven .rc {
   display: flex;
@@ -268,7 +264,7 @@ nav .nav-right a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  display: none;
+  /* display: none; */
 }
 #container-eight .eight-hed {
   width: fit-content;
@@ -301,7 +297,7 @@ footer {
   height: 35vh;
   background-color: #151414;
   padding: 2vw;
-  display: none;
+  /* display: none; */
 }
 footer .foot-hed {
 }

@@ -61,7 +61,6 @@ const imageRendererLoader = () => {
   const preLoad = () => {
     img.src = loaderImage[crval];
     crval = (crval + 1) % loaderImage.length;
-    console.log("hii");
   };
   const showImg = () => {
     preLoad();
@@ -173,10 +172,12 @@ const fourContent = () => {
   ];
   box.forEach((obj) => {
     const divs = document.createElement("div");
-    divs.append("#container-four");
-    const innerDivs = document.createElement("div");
-    innerDivs.append(divs);
-    console.log(innerDivs);
+    const four = document.querySelector("#container-four");
+    divs.style.width = "400px";
+    divs.style.height = "400px";
+    divs.style.backgroundColor = "red";
+    divs.append(four);
+    console.log(four);
   });
 };
 // fourContent();
