@@ -1,3 +1,6 @@
+const $ = elem => document.querySelector(elem)
+const $$ = elem => document.querySelectorAll(elem)
+
 const loco = () => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -52,7 +55,7 @@ const imageRendererLoader = () => {
     `images/l10.svg`,
     `images/l11.svg`,
   ];
-  const img = document.querySelector(`.img-box img`);
+  const img = $(`.img-box img`);
   let crval = 0;
   let itretion = 0;
   let maxIntrection = 3;
@@ -84,7 +87,7 @@ const imageRendererLoader = () => {
 };
 imageRendererLoader();
 
-const heroHed = document.querySelector(".hero>h1");
+const heroHed = $(".hero>h1");
 let culture = "";
 heroHed.textContent.split("").forEach((words) => {
   culture += `<span>${words}</span>`;
@@ -127,7 +130,7 @@ gsap.to("#container-third h1", {
   },
 });
 const mouseFollower = () => {
-  document.querySelector(`#container-four`).onmousemove = (e) => {
+  $(`#container-four`).onmousemove = (e) => {
     gsap.to(`#container-four .mousefollow`, {
       x: e.clientX,
       y: e.clientY,
